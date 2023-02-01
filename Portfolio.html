@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <!-- Menu Encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Heyce López</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostarOcultarMenu()">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </header>
+    </div>
+
+<!-- Seccion inicio -->
+<section id="inicio" class="inicio">
+    <div class="contenedor-banner">
+        <div class="contendor-img">
+            <img src="18.jpg" alt="">
+            <h1>Heyce López</h1>
+            <h2>Técnico Superior en Comercio Exterior</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sobre mi  -->
+<section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>Sobre mí</h2>
+        <p><span>Hola, soy Heyce.</span> Soy técnico en comercio exterior, me consideron una persona autodidacta, disciplinada, puntual, con empatía; de a poco me encuentro indagando en el mundo FRONT-END y me está gustando.</p>
+        
+        <div class="fila">
+            <!-- datos personales  -->
+            <div class="col">
+                <h3>Datos personales</h3>
+                <ul>
+                    <li>
+                        <strong>Cumpleaños</strong>
+                        26-12-1991
+                    </li>
+                    <li>
+                        <strong>Telefono</strong>
+                        54911-67006800
+                    </li>
+                    <li>
+                        <strong>Edad</strong>
+                        31
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        <span>cvs@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- intereses  -->
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="intereses">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>Viajar</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Comer</span>
+                    </div>
+                      <div class="intereses">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>Ir de Compras</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button>
+            <a download="Cv" href="mi Cv.pdf">Descargar CV</a> 
+            <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button>
+    </div>
+</section>
+<!-- seccion skills -->
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+<!-- habilidades tecnicas -->
+            <div class="col">
+                <h3>Habilidades Técnicas</h3>
+                <div class="skill">
+                    <span>Manejo paquete MICROSOFT</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>20%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Ingles</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>45%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Trabajo en equipo</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Manejo de la computadora</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+<!-- curriculum  -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>Comercio Exteriror</h4>
+                    <span class="casa">Universidad Nuevas Profesiones</span>
+                    <span class="fecha">2015-2018</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur temporibus placeat neque assumenda quis odio esse quaerat quos debitis molestias, quibusdam dolorem ab necessitatibus. Inventore non in neque saepe.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Bachiller mención Ciencias</h4>
+                    <span class="casa">Colegio José Antonio Paéz</span>
+                    <span class="fecha">2010-2015</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur temporibus placeat neque assumenda quis odio esse quaerat quos debitis molestias, quibusdam dolorem ab necessitatibus. Inventore non in neque saepe.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col derecha">
+                <h3>Experiencias laborales</h3>
+                <div class="item der">
+                    <h4>Analista de calidad</h4>
+                    <span class="casa">Movistar</span>
+                    <span class="fecha">2019-2021</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur temporibus placeat neque assumenda quis odio esse quaerat quos debitis molestias, quibusdam dolorem ab necessitatibus. Inventore non in neque saepe.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Analista de Facturación</h4>
+                    <span class="casa">Hermanos Camacho</span>
+                    <span class="fecha">2022-Actualmente</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur temporibus placeat neque assumenda quis odio esse quaerat quos debitis molestias, quibusdam dolorem ab necessitatibus. Inventore non in neque saepe.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- footer  -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-square-facebook"></i>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
